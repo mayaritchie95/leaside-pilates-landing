@@ -12,6 +12,23 @@
 <meta name="geo.region" content="CA-ON">
 <meta name="geo.placename" content="Leaside, Toronto">
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '26238821305805814');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=26238821305805814&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+
 <!-- Open Graph / social sharing -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Leaside Pilates">
@@ -334,8 +351,8 @@ footer a:hover{color:var(--ink)}
       <li><a href="#book">Contact</a></li>
     </ul>
     <div class="actions">
-      <a class="login" href="#">Log In</a>
-      <a class="btn" href="#book">Book Now</a>
+      <a class="login" href="https://momence.com/u/leaside-pilates-Pg0Y5y" target="_blank" rel="noopener">Log In</a>
+      <a class="btn cta" href="https://momence.com/m/931146" target="_blank" rel="noopener">Start 2 weeks — $99</a>
       <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -348,7 +365,7 @@ footer a:hover{color:var(--ink)}
         <p class="pre">New to reformer Pilates?</p>
         <h1>2 Weeks Unlimited for $99</h1>
         <p>Experience small-group reformer Pilates in Leaside with expert instruction and personalized attention.</p>
-        <a class="btn-offer" href="#book">Start your 2 weeks — $99</a>
+        <a class="btn-offer cta" href="https://momence.com/m/931146" target="_blank" rel="noopener">Start your 2 weeks — $99</a>
         <p class="fine">New clients only · Maximum one class per day</p>
       </div>
       <div class="hero-media">
@@ -416,12 +433,12 @@ footer a:hover{color:var(--ink)}
 
   <section class="feature">
     <div class="wrap">
-      <div class="photo"><img src="assets/class-level2.jpg" alt="A client guided through a reformer exercise at Leaside Pilates"></div>
+      <div class="photo"><img src="assets/feature.jpg" alt="A client relaxing in the bright, plant-filled lounge at Leaside Pilates"></div>
       <div class="copy">
         <p class="eyebrow">A better way to experience</p>
         <h2>Reformer Pilates</h2>
         <p>Whether you're completely new to Pilates or getting back into movement, our intro offer gives you two weeks to experience different classes and instructors and find what works best for you.</p>
-        <a class="btn-offer" href="#book">Get the $99 intro offer</a>
+        <a class="btn-offer cta" href="https://momence.com/m/931146" target="_blank" rel="noopener">Get the $99 intro offer</a>
       </div>
     </div>
   </section>
@@ -576,7 +593,7 @@ footer a:hover{color:var(--ink)}
       <div class="copy">
         <p class="pre">Ready to feel the difference?</p>
         <h2>2 Weeks Unlimited Reformer<span>$99</span></h2>
-        <a class="btn-offer" href="#">Start my intro offer</a>
+        <a class="btn-offer cta" href="https://momence.com/m/931146" target="_blank" rel="noopener">Start my intro offer</a>
         <p class="fine">New clients only · Maximum one class per day</p>
       </div>
     </div>
@@ -611,6 +628,19 @@ footer a:hover{color:var(--ink)}
   if(matchMedia('(prefers-reduced-motion: reduce)').matches) v.removeAttribute('autoplay'),v.pause();
   const hv=document.querySelector('video.hero-img');
   if(hv&&matchMedia('(prefers-reduced-motion: reduce)').matches){hv.removeAttribute('autoplay');hv.pause();}
+</script>
+<script>
+  (function(){
+    var fired=false;
+    document.querySelectorAll('a.cta').forEach(function(a){
+      a.addEventListener('click',function(){
+        if(typeof fbq==='function' && !fired){
+          fired=true;
+          fbq('track','Lead',{content_name:'2 Weeks Unlimited Reformer $99',value:99.00,currency:'CAD'});
+        }
+      });
+    });
+  })();
 </script>
 </body>
 </html>
