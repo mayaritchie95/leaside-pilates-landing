@@ -171,7 +171,7 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;h
 
 /* Hero: cream text panel left (~42%), landscape photo right */
 .hero .wrap{display:grid;grid-template-columns:42% 1fr;gap:0;align-items:stretch;max-width:none;padding:0}
-.hero-copy{padding:clamp(2.5rem,5vw,4.5rem) clamp(1.5rem,4vw,3.5rem);display:flex;flex-direction:column;justify-content:center}
+.hero-copy{background:var(--linen);padding:clamp(2.5rem,5vw,4.5rem) clamp(1.75rem,4vw,3.75rem);display:flex;flex-direction:column;justify-content:center}
 .hero-copy .pre{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--stone);margin:0 0 1rem}
 .hero h1{font-weight:400;font-size:clamp(2.6rem,4.6vw,4rem);line-height:1.02;margin:0 0 1.1rem}
 .hero p{font-size:1rem;color:var(--stone);margin:0 0 1.75rem;max-width:30rem}
@@ -186,8 +186,8 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;h
 }
 
 /* Offer button (dark green, like the mockup CTA) */
-.btn-offer{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--sans);font-weight:500;font-size:.92rem;text-decoration:none;padding:1rem 1.6rem;border-radius:4px;background:#39492F;color:#fff;border:1px solid #39492F;transition:background .2s}
-.btn-offer:hover{background:#2c3924}
+.btn-offer{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--sans);font-weight:500;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:1.05rem 1.9rem;border-radius:999px;background:#3B4A33;color:#fff;border:1px solid #3B4A33;transition:background .2s}
+.btn-offer:hover{background:#2d3927}
 .btn-offer::after{content:"\2192"}
 
 /* Trust strip — single centered row, 6 points on cream */
@@ -224,16 +224,18 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;h
 
 /* Reviews — light tinted band, 3 plain cards, gold stars */
 .reviews{background:#EFEAE1}
-.reviews .head{margin-bottom:2.5rem}
+.reviews .head{margin-bottom:2.25rem}
 .reviews .head .eyebrow{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--stone);margin:0 0 .6rem}
-.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.review{background:#fff;border-radius:2px;padding:1.75rem}
-.review .stars{color:#E0A73B;letter-spacing:2px;font-size:.95rem;margin-bottom:.9rem}
-.review blockquote{margin:0 0 1rem;font-size:.96rem;line-height:1.55;color:var(--ink)}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;max-width:62rem;margin:0 auto}
+.review{background:transparent;padding:0}
+.review .stars{color:#E3A93A;letter-spacing:2px;font-size:.95rem;margin-bottom:.9rem}
+.review blockquote{margin:0 0 1rem;font-size:.92rem;line-height:1.6;color:var(--ink)}
 .review cite{font-style:normal;font-size:.82rem;color:var(--stone)}
-.rating-line{text-align:center;margin-top:2rem;font-size:.95rem;color:var(--ink)}
-.rating-line strong{font-weight:500}
-@media (max-width:860px){.review-grid{grid-template-columns:1fr;max-width:30rem;margin:0 auto}}
+.rating-line{display:flex;align-items:center;justify-content:center;gap:.4rem;margin-top:2.5rem;font-size:.95rem;color:var(--ink);flex-wrap:wrap}
+.rating-line .num{font-weight:600}
+.rating-line .gstar{color:#E3A93A}
+.rating-line .sub{width:100%;text-align:center;font-size:.8rem;color:var(--stone);margin-top:.2rem}
+@media (max-width:860px){.review-grid{grid-template-columns:1fr;max-width:30rem;margin:0 auto;gap:2rem}}
 
 /* Steps — single row of 4 numbered circles */
 .steps .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.75rem}
@@ -494,7 +496,7 @@ footer a:hover{color:var(--ink)}
           <cite>— Google review</cite>
         </figure>
       </div>
-      <p class="rating-line"><strong>5.0 ★ Google rating</strong> · based on 100+ reviews</p>
+      <p class="rating-line"><span class="num">5.0</span> <span class="gstar">★</span> <span>Google rating</span><span class="sub">Based on 100+ reviews</span></p>
     </div>
   </section>
 
