@@ -27,3 +27,18 @@ A single-page site for Leaside Pilates (Toronto). Plain HTML/CSS/JS, no build st
 
 ## Note on the hero video
 `assets/hero.mp4` (~7 MB) autoplays muted and loops, with `assets/hero-poster.jpg` shown while it loads and for anyone who prefers reduced motion. To use a still instead, delete the `<video>` element's `<source>` line, or replace the whole block with the `index.html` `<img>` fallback already inside it.
+
+## Meta ads landing page (`intro.html`)
+A dedicated, conversion-focused page for Meta (Facebook/Instagram) ad traffic.
+- No site navigation — every CTA links straight to the Momence purchase page (https://momence.com/m/931146), opening in a new tab.
+- Marked `noindex` so it won't show up in Google search (ad pages shouldn't compete with the main site).
+- A sticky bottom CTA bar appears on mobile.
+
+### Meta Pixel — ACTION REQUIRED
+The page includes the Meta Pixel base code, but with a placeholder ID. Before running ads:
+1. Open `intro.html` and replace BOTH instances of `YOUR_PIXEL_ID` with your real Pixel ID (from Meta Events Manager).
+2. The Pixel fires `PageView` automatically on load.
+3. The first click on any CTA fires a `Lead` event (value 99.00 CAD, content_name "2 Weeks Unlimited Reformer $99"), then sends the visitor to Momence.
+4. Verify with the Meta Pixel Helper browser extension, or in Events Manager → Test Events, once the page is live on a real URL (the Pixel won't register from a local file).
+
+Point your Meta ad's destination URL at `.../intro.html`.
