@@ -29,6 +29,16 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=26238821305805814&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18016685598"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18016685598');
+</script>
+<!-- End Google tag -->
+
 <!-- Open Graph / social sharing -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Leaside Pilates">
@@ -117,10 +127,7 @@ src="https://www.facebook.com/tr?id=26238821305805814&ev=PageView&noscript=1"/><
         {"@type":"Question","name":"Do I need experience to start?","acceptedAnswer":{"@type":"Answer","text":"Not at all. We work with complete beginners every day. If you're new, a private session or a beginner-friendly Level 1 or All Levels group class is a great place to start."}},
         {"@type":"Question","name":"What's the difference between private and group?","acceptedAnswer":{"@type":"Answer","text":"Private (and duo or trio) sessions are fully tailored to you in our dedicated private studio in Unit 109. Group classes are kept small for personal attention while offering the energy of a class setting."}},
         {"@type":"Question","name":"Can Pilates help after an injury or surgery?","acceptedAnswer":{"@type":"Answer","text":"Yes \u2014 many clients come to us returning to movement after injury or surgery, or for prenatal and postnatal support. Private sessions let us tailor everything to your needs. Please consult your healthcare provider before starting any new exercise program."}},
-        {"@type":"Question","name":"Do intro offers and packages expire?","acceptedAnswer":{"@type":"Answer","text":"Intro packages must be used within 21 days of purchase. Most other packages expire 6 months from purchase, and subscriptions renew monthly and can be cancelled anytime."}},
-        {"@type":"Question","name":"How do I book?","acceptedAnswer":{"@type":"Answer","text":"Group classes are booked through Momence \u2014 log in through our website or download the Momence app. Private, duo, and trio sessions are by appointment \u2014 book by email, phone, or our contact form."}},
-        {"@type":"Question","name":"Do you sell gift cards?","acceptedAnswer":{"@type":"Answer","text":"Yes. Leaside Pilates gift cards are available in any amount."}},
-        {"@type":"Question","name":"Do you offer GYROTONIC\u00ae?","acceptedAnswer":{"@type":"Answer","text":"Yes, we offer private GYROTONIC\u00ae sessions on specialized equipment in Unit 109."}}
+        {"@type":"Question","name":"How do I book?","acceptedAnswer":{"@type":"Answer","text":"Group classes are booked through Momence \u2014 log in through our website or download the Momence app. Private, duo, and trio sessions are by appointment \u2014 book by email, phone, or our contact form."}}
       ]
     }
   ]
@@ -568,20 +575,8 @@ footer a:hover{color:var(--ink)}
         <div class="faq-a"><p>Yes — many clients come to us returning to movement after injury or surgery, or for prenatal and postnatal support. Private sessions let us tailor everything to your needs. Please consult your healthcare provider before starting any new exercise program.</p></div>
       </details>
       <details class="faq">
-        <summary>Do intro offers and packages expire?</summary>
-        <div class="faq-a"><p>Intro packages must be used within 21 days of purchase. Most other packages expire 6 months from purchase, and subscriptions renew monthly and can be cancelled anytime.</p></div>
-      </details>
-      <details class="faq">
         <summary>How do I book?</summary>
         <div class="faq-a"><p>Group classes are booked through Momence — log in through our website or download the Momence app. Private, duo, and trio sessions are by appointment — book by email, phone, or our contact form.</p></div>
-      </details>
-      <details class="faq">
-        <summary>Do you sell gift cards?</summary>
-        <div class="faq-a"><p>Yes. Leaside Pilates gift cards are available in any amount.</p></div>
-      </details>
-      <details class="faq">
-        <summary>Do you offer GYROTONIC®?</summary>
-        <div class="faq-a"><p>Yes, we offer private GYROTONIC® sessions on specialized equipment in Unit 109.</p></div>
       </details>
       </div>
     </div>
@@ -637,6 +632,7 @@ footer a:hover{color:var(--ink)}
         if(typeof fbq==='function' && !fired){
           fired=true;
           fbq('track','Lead',{content_name:'2 Weeks Unlimited Reformer $99',value:99.00,currency:'CAD'});
+          if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-18016685598/2_gdCKiZmJ4dEJ6cg49D'});}
         }
       });
     });

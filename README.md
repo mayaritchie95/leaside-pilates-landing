@@ -42,3 +42,10 @@ The Meta Pixel (ID 26238821305805814) is installed on BOTH `index.html` and `int
 4. Verify with the Meta Pixel Helper browser extension, or in Events Manager → Test Events, once the page is live on a real URL (the Pixel won't register from a local file).
 
 Point your Meta ad's destination URL at `.../intro.html`.
+
+## Google Ads conversion tracking
+The Google Ads global site tag (AW-18016685598) is installed on both `index.html` and `intro.html`.
+Because checkout happens on Momence (off-site), the conversion event
+(`AW-18016685598/2_gdCKiZmJ4dEJ6cg49D`) fires on the first $99 CTA click — the same
+moment the Meta `Lead` event fires — rather than on a "thank you" page. Verify with
+Google Tag Assistant on the live URL once deployed.
