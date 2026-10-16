@@ -31,21 +31,8 @@ A single-page site for Leaside Pilates (Toronto). Plain HTML/CSS/JS, no build st
 ## Meta ads landing page (`intro.html`)
 A dedicated, conversion-focused page for Meta (Facebook/Instagram) ad traffic.
 - No site navigation — every CTA links straight to the Momence purchase page (https://momence.com/m/931146), opening in a new tab.
+Tracking will be configured in Momence, not in these files.
 - Marked `noindex` so it won't show up in Google search (ad pages shouldn't compete with the main site).
 - A sticky bottom CTA bar appears on mobile.
 
-### Meta Pixel — ACTION REQUIRED
-The Meta Pixel (ID 26238821305805814) is installed on BOTH `index.html` and `intro.html`.
-1. No placeholder left to replace — it is live in the files.
-2. The Pixel fires `PageView` automatically on load.
-3. The first click on any CTA fires a `Lead` event (value 99.00 CAD, content_name "2 Weeks Unlimited Reformer $99"), then sends the visitor to Momence.
-4. Verify with the Meta Pixel Helper browser extension, or in Events Manager → Test Events, once the page is live on a real URL (the Pixel won't register from a local file).
 
-Point your Meta ad's destination URL at `.../intro.html`.
-
-## Google Ads conversion tracking
-The Google Ads global site tag (AW-18016685598) is installed on both `index.html` and `intro.html`.
-Because checkout happens on Momence (off-site), the conversion event
-(`AW-18016685598/2_gdCKiZmJ4dEJ6cg49D`) fires on the first $99 CTA click — the same
-moment the Meta `Lead` event fires — rather than on a "thank you" page. Verify with
-Google Tag Assistant on the live URL once deployed.

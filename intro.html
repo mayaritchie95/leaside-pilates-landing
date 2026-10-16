@@ -13,34 +13,6 @@
 <meta property="og:title" content="2 Weeks Unlimited Reformer for $99 | Leaside Pilates">
 <meta property="og:description" content="New clients: 2 weeks of unlimited small-group reformer Pilates in Leaside, Toronto for $99.">
 <meta property="og:image" content="assets/hero.jpg">
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '26238821305805814');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=26238821305805814&ev=PageView&noscript=1"/></noscript>
-<!-- End Meta Pixel Code -->
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18016685598"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-18016685598');
-</script>
-<!-- End Google tag -->
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Sora:wght@300;400;500&display=swap" rel="stylesheet">
@@ -271,7 +243,7 @@ footer a:hover{color:var(--ink)}
 <header class="adbar">
   <div class="wrap">
     <span class="logo" aria-label="Leaside Pilates"><span class="l1">Leaside</span><span class="l2">PILATES</span></span>
-    <a class="btn-offer cta" href="https://momence.com/m/931146" target="_blank" rel="noopener" data-cta="header">Start your 2 weeks — $99</a>
+    <a class="btn-offer" href="https://momence.com/m/931146" target="_blank" rel="noopener" data-cta="header">Start your 2 weeks — $99</a>
   </div>
 </header>
 
@@ -282,7 +254,7 @@ footer a:hover{color:var(--ink)}
         <p class="pre">New to reformer Pilates?</p>
         <h1>2 Weeks Unlimited for $99</h1>
         <p>Experience small-group reformer Pilates in Leaside with expert instruction and personalized attention.</p>
-        <a class="btn-offer cta" href="https://momence.com/m/931146" target="_blank" rel="noopener" data-cta="hero">Start your 2 weeks — $99</a>
+        <a class="btn-offer" href="https://momence.com/m/931146" target="_blank" rel="noopener" data-cta="hero">Start your 2 weeks — $99</a>
         <p class="fine">New clients only · Maximum one class per day</p>
       </div>
       <div class="hero-media">
@@ -314,7 +286,7 @@ footer a:hover{color:var(--ink)}
           <li>Beginner-friendly: no experience needed to start</li>
           <li>Grip socks available at the studio</li>
         </ul>
-        <a class="btn-offer cta" href="https://momence.com/m/931146" target="_blank" rel="noopener" data-cta="included" style="margin-top:1.75rem">Get the $99 intro offer</a>
+        <a class="btn-offer" href="https://momence.com/m/931146" target="_blank" rel="noopener" data-cta="included" style="margin-top:1.75rem">Get the $99 intro offer</a>
       </div>
       <div class="photo"><img src="assets/class-level2.jpg" alt="A client guided through a reformer exercise at Leaside Pilates"></div>
     </div>
@@ -384,7 +356,7 @@ footer a:hover{color:var(--ink)}
       <div class="copy">
         <p class="pre">Ready to feel the difference?</p>
         <h2>2 Weeks Unlimited Reformer<span>$99</span></h2>
-        <a class="btn-offer cta" href="https://momence.com/m/931146" target="_blank" rel="noopener" data-cta="closing">Start my intro offer</a>
+        <a class="btn-offer" href="https://momence.com/m/931146" target="_blank" rel="noopener" data-cta="closing">Start my intro offer</a>
         <p class="fine">New clients only · Maximum one class per day</p>
       </div>
     </div>
@@ -392,7 +364,7 @@ footer a:hover{color:var(--ink)}
 </main>
 
 <div class="sticky-cta">
-  <a class="btn-offer cta" href="https://momence.com/m/931146" target="_blank" rel="noopener" data-cta="sticky">Start your 2 weeks — $99</a>
+  <a class="btn-offer" href="https://momence.com/m/931146" target="_blank" rel="noopener" data-cta="sticky">Start your 2 weeks — $99</a>
 </div>
 
 <footer>
@@ -402,20 +374,5 @@ footer a:hover{color:var(--ink)}
   </div>
 </footer>
 
-<script>
-  // Fire a single Lead event on the first CTA click (then let the link proceed to Momence)
-  (function(){
-    var fired=false;
-    document.querySelectorAll('a.cta').forEach(function(a){
-      a.addEventListener('click',function(){
-        if(typeof fbq==='function' && !fired){
-          fired=true;
-          fbq('track','Lead',{content_name:'2 Weeks Unlimited Reformer $99',value:99.00,currency:'CAD'});
-          if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-18016685598/2_gdCKiZmJ4dEJ6cg49D'});}
-        }
-      });
-    });
-  })();
-</script>
 </body>
 </html>
