@@ -36,3 +36,9 @@ Tracking will be configured in Momence, not in these files.
 - A sticky bottom CTA bar appears on mobile.
 
 
+
+## Google Ads — click-to-call tracking
+The Google Ads global site tag (AW-18016685598) is installed on both `index.html` and `intro.html`.
+The footer phone number (647-550-9968) fires a click-to-call conversion
+(`AW-18016685598/pmQsCPn1jp8dEJ6cg49D`) when tapped, then places the call.
+This is most relevant on mobile. Verify with Google Tag Assistant on the live URL once deployed.

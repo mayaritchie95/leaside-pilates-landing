@@ -9,6 +9,32 @@
 <meta name="robots" content="noindex, follow">
 <meta name="theme-color" content="#F7F3EE">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18016685598"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18016685598');
+</script>
+<!-- Event snippet for Click to call conversion -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') { window.location = url; }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18016685598/pmQsCPn1jp8dEJ6cg49D',
+      'value': 1.0,
+      'currency': 'CAD',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+<!-- End Google tag -->
+
+
 <meta property="og:type" content="website">
 <meta property="og:title" content="2 Weeks Unlimited Reformer for $99 | Leaside Pilates">
 <meta property="og:description" content="New clients: 2 weeks of unlimited small-group reformer Pilates in Leaside, Toronto for $99.">
@@ -370,7 +396,7 @@ footer a:hover{color:var(--ink)}
 <footer>
   <div class="wrap">
     <span class="logo" aria-label="Leaside Pilates"><span class="l1">Leaside</span><span class="l2">PILATES</span></span>
-    <address class="nap">Leaside Pilates<br>28 Industrial St, Units 108 &amp; 109<br>Toronto, ON M4G 1Y9<br><a href="tel:+16475509968">647-550-9968</a> &nbsp;|&nbsp; <a href="mailto:hello@leasidepilates.com">hello@leasidepilates.com</a></address>
+    <address class="nap">Leaside Pilates<br>28 Industrial St, Units 108 &amp; 109<br>Toronto, ON M4G 1Y9<br><a href="tel:+16475509968" onclick="return gtag_report_conversion('tel:+16475509968');">647-550-9968</a> &nbsp;|&nbsp; <a href="mailto:hello@leasidepilates.com">hello@leasidepilates.com</a></address>
   </div>
 </footer>
 
